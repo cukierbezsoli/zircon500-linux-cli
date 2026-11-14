@@ -1,0 +1,15 @@
+# Genesis Zircon 500 (v1) - Wired USB & 2.4 GHz Wireless Receiver
+# Priority 69 (< 73-seat-late.rules) grants desktop session user R/W ACL via uaccess
+# without relying on Debian-only groups such as 'plugdev'.
+
+# Wired USB mode observed on user hardware (XCTECH USB Gaming Mouse)
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="248a", ATTRS{idProduct}=="5b2e", MODE="0660", TAG+="uaccess"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="248a", ATTRS{idProduct}=="5b2e", MODE="0660", TAG+="uaccess"
+
+# 2.4 GHz Wireless Receiver dongle (SSCYPL Wireless-Receiver)
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="248a", ATTRS{idProduct}=="5b2f", MODE="0660", TAG+="uaccess"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="248a", ATTRS{idProduct}=="5b2f", MODE="0660", TAG+="uaccess"
+
+# Legacy/alternate wired VID:PID referenced by Zircon_500_setup.exe
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="331a", ATTRS{idProduct}=="5024", MODE="0660", TAG+="uaccess"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="331a", ATTRS{idProduct}=="5024", MODE="0660", TAG+="uaccess"
