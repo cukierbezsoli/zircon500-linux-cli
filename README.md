@@ -1,4 +1,4 @@
-# Genesis Zircon 500 — Linux CLI & TUI
+# Genesis Zircon 500  Linux CLI & TUI
 
 Nieoficjalne narzędzie do pełnej konfiguracji myszy **Genesis Zircon 500 (v1)** pod systemem Linux (po kablu USB oraz przez odbiornik 2.4 GHz), bez potrzeby instalowania Windowsa ani używania Wine.
 
@@ -11,7 +11,7 @@ Nieoficjalne narzędzie do pełnej konfiguracji myszy **Genesis Zircon 500 (v1)*
 
 ### Dlaczego powstał ten projekt
 
-Oficjalne oprogramowanie Genesis do Zircona 500 działa wyłącznie na Windowsie. To narzędzie pozwala zmienić wszystkie najważniejsze ustawienia myszy bezpośrednio z terminala na Linuxie — zarówno w interaktywnym menu obsługiwanym klawiaturą i myszą, jak i zwykłymi poleceniami w skrypcie lub terminalu.
+Oficjalne oprogramowanie Genesis do Zircona 500 działa wyłącznie na Windowsie. To narzędzie pozwala zmienić wszystkie najważniejsze ustawienia myszy bezpośrednio z terminala na Linuxie  zarówno w interaktywnym menu obsługiwanym klawiaturą i myszą, jak i zwykłymi poleceniami w skrypcie lub terminalu.
 
 ### Obsługiwane urządzenia
 
@@ -35,12 +35,12 @@ Oficjalne oprogramowanie Genesis do Zircona 500 działa wyłącznie na Windowsie
 
 ### Funkcje
 
-- **Interaktywne menu (`zircon500`)** — pełne menu w terminalu z obsługą klawiatury (`1..5`, `F1..F5`, `Tab`) i myszy, przełącznikiem języka `PL/EN` (`L`) oraz trybem podglądu bez zapisu na mysz (`--dry-run` / `D`).
-- **Progi DPI (1–8 progów)** — ustawianie dowolnej liczby aktywnych progów pod przyciskiem DPI, osobna czułość osi X/Y (np. `800x1200`), opcjonalne zaokrąglanie do natywnych kroków sensora PMW3325, podgląd aktywnego progu na żywo oraz zapamiętywanie wpisanych progów lokalnie w `~/.config/zircon500/profile.json`.
-- **Sensor i opóźnienia (Input Lag)** — zmiana taktowania USB (`125 / 250 / 500 / 1000 Hz`), wysokości odcięcia sensora LOD (`1 mm` lub `2 mm`), czasu debounce kliku (`2–20 ms`) oraz wbudowany pomiar rzeczywistego polling rate (`poll-test`) podczas poruszania myszą.
-- **Mapowanie przycisków** — przypisywanie gotowych funkcji (np. `dpi-loop`, `vol-up`, `triple-click`, `disable`), skrótów klawiszowych (np. `key:ctrl+c`, `key:space`), multi-kliku (`fire:50:3`) oraz szybkie przywracanie domyślnych wszystkich 6 przycisków jednym kliknięciem.
-- **Zasilanie 2.4 GHz i reset** — ustawienie czasu przejścia w stan uśpienia (`1–60 min`), opcja Motion Wake-Up (dla wspieranych wersji firmware) oraz bezpieczny reset profilu do ustawień fabrycznych.
-- **Brak dotykania firmware** — narzędzie nigdy nie wysyła komend aktualizacji firmware ani bootloadera.
+- **Interaktywne menu (`zircon500`)**  pełne menu w terminalu z obsługą klawiatury (`1..5`, `F1..F5`, `Tab`) i myszy, przełącznikiem języka `PL/EN` (`L`) oraz trybem podglądu bez zapisu na mysz (`--dry-run` / `D`).
+- **Progi DPI (1–8 progów)**  ustawianie dowolnej liczby aktywnych progów pod przyciskiem DPI, osobna czułość osi X/Y (np. `800x1200`), opcjonalne zaokrąglanie do natywnych kroków sensora PMW3325, podgląd aktywnego progu na żywo oraz zapamiętywanie wpisanych progów lokalnie w `~/.config/zircon500/profile.json`.
+- **Sensor i opóźnienia (Input Lag)**  zmiana taktowania USB (`125 / 250 / 500 / 1000 Hz`), wysokości odcięcia sensora LOD (`1 mm` lub `2 mm`), czasu debounce kliku (`2–20 ms`) oraz wbudowany pomiar rzeczywistego polling rate (`poll-test`) podczas poruszania myszą.
+- **Mapowanie przycisków**  przypisywanie gotowych funkcji (np. `dpi-loop`, `vol-up`, `triple-click`, `disable`), skrótów klawiszowych (np. `key:ctrl+c`, `key:space`), multi-kliku (`fire:50:3`) oraz szybkie przywracanie domyślnych wszystkich 6 przycisków jednym kliknięciem.
+- **Zasilanie 2.4 GHz i reset**  ustawienie czasu przejścia w stan uśpienia (`1–60 min`), opcja Motion Wake-Up (dla wspieranych wersji firmware) oraz bezpieczny reset profilu do ustawień fabrycznych.
+- **Brak dotykania firmware**  narzędzie nigdy nie wysyła komend aktualizacji firmware ani bootloadera.
 
 ---
 
@@ -136,12 +136,12 @@ An unofficial Linux configurator for the **Genesis Zircon 500 (v1)** gaming mous
 
 ### Features
 
-- **Interactive TUI (`zircon500`)** — clean terminal interface navigable via keyboard (`1..5`, `F1..F5`, `Tab`) and mouse, with instant `EN/PL` switching (`L`) and `--dry-run` simulation mode (`D`).
-- **DPI Stages (1–8 stages)** — configure how many DPI stages stay active under the mouse DPI button, optional split X/Y sensitivity (e.g. `800x1200`), optional snapping to PMW3325 hardware steps, live active-stage tracking, and automatic local persistence in `~/.config/zircon500/profile.json`.
-- **Sensor & Latency** — configure USB polling rate (`125 / 250 / 500 / 1000 Hz`), Lift-Off Distance (`1 mm` or `2 mm`), click debounce delay (`2–20 ms`), and test real USB packet cadence live via `poll-test`.
-- **Button Remapping** — bind built-in presets (`dpi-loop`, `vol-up`, `triple-click`, `disable`, etc.), keyboard combos (`key:ctrl+c`, `key:space`), multi-click (`fire:50:3`), or restore default bindings for all 6 buttons with one action.
-- **2.4 GHz Power & Profile Reset** — set idle sleep timeout (`1–60 min`), Motion Wake-Up (on supported firmware), and safe factory profile reset.
-- **Bootloader-safe** — firmware flashing / DFU commands are completely excluded.
+- **Interactive TUI (`zircon500`)**  clean terminal interface navigable via keyboard (`1..5`, `F1..F5`, `Tab`) and mouse, with instant `EN/PL` switching (`L`) and `--dry-run` simulation mode (`D`).
+- **DPI Stages (1–8 stages)**  configure how many DPI stages stay active under the mouse DPI button, optional split X/Y sensitivity (e.g. `800x1200`), optional snapping to PMW3325 hardware steps, live active-stage tracking, and automatic local persistence in `~/.config/zircon500/profile.json`.
+- **Sensor & Latency**  configure USB polling rate (`125 / 250 / 500 / 1000 Hz`), Lift-Off Distance (`1 mm` or `2 mm`), click debounce delay (`2–20 ms`), and test real USB packet cadence live via `poll-test`.
+- **Button Remapping**  bind built-in presets (`dpi-loop`, `vol-up`, `triple-click`, `disable`, etc.), keyboard combos (`key:ctrl+c`, `key:space`), multi-click (`fire:50:3`), or restore default bindings for all 6 buttons with one action.
+- **2.4 GHz Power & Profile Reset**  set idle sleep timeout (`1–60 min`), Motion Wake-Up (on supported firmware), and safe factory profile reset.
+- **Bootloader-safe**  firmware flashing / DFU commands are completely excluded.
 
 ---
 
