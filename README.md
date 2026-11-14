@@ -97,6 +97,14 @@ zircon500 reset-defaults                 # przywrócenie profilu fabrycznego
 
 Każdą komendę zapisującą można bezpiecznie podejrzeć z flagą `--dry-run`.
 
+### Środowisko testowe i błędy
+
+Program był budowany i testowany na żywo na:
+- **System:** CachyOS Linux (Arch-based), kernel `7.3.4-1-cachyos`, Python `3.14`
+- **Mysz:** Genesis Zircon 500 (v1), `248a:5b2e` (USB), sensor `PMW3325`, firmware `M147`
+
+Jeśli trafisz na błąd na innej dystrybucji Linuxa, z innym firmware albo w trybie 2.4 GHz, zgłoś go w zakładce [Issues](https://github.com/cukierbezsoli/zircon500-linux-cli/issues) (najlepiej z wynikiem `zircon500 info`).
+
 ---
 
 <a id="english"></a>
@@ -189,3 +197,11 @@ zircon500 reset-defaults                 # restore factory mouse profile
 ```
 
 Pass `--dry-run` to preview generated HID packets without writing to the device.
+
+### Test Environment & Issues
+
+Built and tested on live hardware with:
+- **OS:** CachyOS Linux (Arch-based), kernel `7.3.4-1-cachyos`, Python `3.14`
+- **Mouse:** Genesis Zircon 500 (v1), `248a:5b2e` (USB), `PMW3325` sensor, firmware `M147`
+
+If you run into any bugs on another Linux distribution, different firmware, or in 2.4 GHz wireless mode, please open a report in [Issues](https://github.com/cukierbezsoli/zircon500-linux-cli/issues) (ideally including the output of `zircon500 info`).
